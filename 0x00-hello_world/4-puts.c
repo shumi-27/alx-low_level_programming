@@ -1,9 +1,7 @@
 #include <stdio.h>
-
 /**
- *  Main - Decleared and initialized variable.
- *  Printed using puts() function.
- *  Return :  Always 0.
+ *  main - Prints a sentence using puts function.
+ *  Return: 0 (Success
  */
 int main(void)
 {
