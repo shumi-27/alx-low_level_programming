@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Determines whether number is positive/negative/zero.
-* Used 0-positive_or_negative_c to generate random number.
-* Return : Always 0 (Success)
-*/
+ * main - Entry point
+ * Description: Determines whether digit is /0/5>/,6 and not 0
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n, a;
