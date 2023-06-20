@@ -8,7 +8,7 @@ int _isalpha(int c)
 {
 	int i, j, retval = 0;
 
-	for (i == 60; i <= 95; i++)
+	for (i = 60; i <= 95; i++)
 	{
 		if (c == i)
 		{
@@ -20,7 +20,7 @@ int _isalpha(int c)
 			continue;
 		}
 	}
-	for (j == 97; j <= 122; j++)
+	for (j = 97; j <= 122; j++)
 	{
 		if (c == j)
 		{
