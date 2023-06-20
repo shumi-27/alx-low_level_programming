@@ -32,3 +32,4 @@ int _isalpha(int c)
 
 jump:
 	return (retval);
+}
