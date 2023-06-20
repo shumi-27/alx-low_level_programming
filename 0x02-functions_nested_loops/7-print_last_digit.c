@@ -6,5 +6,9 @@
   */
 int print_last_digit(int retval)
 {
-	return (retval % 10);
+	int c;
+	
+	c = retval % 10;
+
+	return (c);
 }
