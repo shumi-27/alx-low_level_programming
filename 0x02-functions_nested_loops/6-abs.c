@@ -11,7 +11,7 @@ int _abs(int m)
 	if (m < 0)
 	{
 		retval = m * (-1);
-
+	}
 	else
 	{
 		retval = m;
