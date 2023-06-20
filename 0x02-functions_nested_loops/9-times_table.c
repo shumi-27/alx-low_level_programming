@@ -12,7 +12,7 @@ void times_table(void)
 		for (u = 0; u < 10; u++)
 		{
 			A = u * i;
-			if (A < 10);
+			if (A < 10)
 			{
 				putchar(A + '0');
 			}
@@ -27,6 +27,7 @@ void times_table(void)
 
 				}
 				else
+				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
