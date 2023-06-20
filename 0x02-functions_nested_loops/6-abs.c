@@ -6,7 +6,6 @@
  */
 int _abs(int m)
 {
-	unsigned int c = m;
 
-	return ((unsigned int)c);
+	return ((unsigned int) m);
 }
