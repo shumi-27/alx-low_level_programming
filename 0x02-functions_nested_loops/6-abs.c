@@ -8,5 +8,5 @@ int _abs(int m)
 {
 	unsigned int c = m;
 
-	return ((unsigned)c);
+	return ((unsigned int)c);
 }
