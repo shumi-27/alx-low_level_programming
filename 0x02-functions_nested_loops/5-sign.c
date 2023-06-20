@@ -6,5 +6,23 @@
  */
 int print_sign(int n)
 {
-return;
+int retval;
+
+	if ( n < 0 && n != 0)
+	{
+		retval = -1;
+		_puchar('-');
+	}
+	else if (n > 0 && n != 0)
+	{
+		retval = 1;
+		_putchar('+');
+	}
+	else
+	{
+		retval = 0;
+		_putcar('0');
+	}
+
+return (retval);
 }
