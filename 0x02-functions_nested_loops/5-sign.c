@@ -8,7 +8,7 @@ int print_sign(int n)
 {
 int retval;
 
-	if ( n < 0 && n != 0)
+	if (n < 0 && n != 0)
 	{
 		retval = -1;
 		_putchar('-');
