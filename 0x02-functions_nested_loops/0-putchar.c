@@ -3,8 +3,9 @@
  * main - Print _puchar
  * Return: Always 0.
  */
-void main(void)
+int main(void)
 {
 	print_putchar();
 
+	return (0);
 }
