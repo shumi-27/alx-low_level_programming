@@ -5,7 +5,14 @@
  */
 int main(void)
 {
-	print_putchar();
+	char pr[] = "_putchar";
+	int i;
+
+	for (i = 0; i < 8 ; i++)
+	{
+		_putchar(pr[i]);
+	}
+	 _putchar('\n');
 
 	return (0);
 }
