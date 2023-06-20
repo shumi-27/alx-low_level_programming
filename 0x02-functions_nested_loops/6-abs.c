@@ -4,7 +4,7 @@
  * @ - Accepts number.
  * Return: Absolute value.
  */
-int _abs(int)
+int _abs(int m)
 {
 	unsigned int c;
 	return (c);
