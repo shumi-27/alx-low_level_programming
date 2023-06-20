@@ -1,4 +1,4 @@
-#include "mains.h"
+#include "MAIN.h"
 /**
  * print_sign -  prints the sign of a number.
  * @n : Accepts number.
@@ -6,5 +6,5 @@
  */
 int print_sign(int n)
 {
-return (retval);
+return;
 }
