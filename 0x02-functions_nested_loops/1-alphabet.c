@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - Entry point
- * Description: 'the program's description'
- * Return: Always 0 (Success)
- */
+  * print_alphabet - prints alphabets
+  * my_args: none
+  * Description: Does my stuff explained.
+  */
 void print_alphabet(void)
 {
 	int i;
