@@ -11,7 +11,7 @@ int retval;
 	if ( n < 0 && n != 0)
 	{
 		retval = -1;
-		_puchar('-');
+		_putchar('-');
 	}
 	else if (n > 0 && n != 0)
 	{
@@ -21,7 +21,7 @@ int retval;
 	else
 	{
 		retval = 0;
-		_putcar('0');
+		_putchar('0');
 	}
 
 return (retval);
