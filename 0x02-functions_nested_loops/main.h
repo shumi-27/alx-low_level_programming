@@ -1,3 +1,5 @@
+int _putchar(int);
+
 void print_putchar(void)
 {
 	char pr[] = "_putchar";
