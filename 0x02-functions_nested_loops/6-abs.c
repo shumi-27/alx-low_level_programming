@@ -1,11 +1,21 @@
 #include "main.h"
-/*
- * _abs : computes the absolute value of an integer
- * @ - Accepts number.
- * Return: Absolute value.
- */
+/**
+  * _abs - computes the absolute value of an integer
+  * @m : Accepts number.
+  * Return: Absolute value.
+  */
 int _abs(int m)
 {
+	int retval;
 
-	return ((unsigned int) m);
+	if (m < 0)
+	{
+		retval = m * (-1);
+
+	else
+	{
+		retval = m;
+	}
+
+	return (retval);
 }
