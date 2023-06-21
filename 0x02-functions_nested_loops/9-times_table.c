@@ -12,7 +12,7 @@ for (i = 0; i < 10; i ++)
 	for (j = 0; j < 10; j ++)
 	{
 		cnt = i * j;
-		if (cnt >= 10)
+		if (cnt > 9)
 		{
 		u = cnt/10;
 		x = cnt % 10;
