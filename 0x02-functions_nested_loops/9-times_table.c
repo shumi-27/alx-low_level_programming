@@ -16,7 +16,8 @@ for (i = 0; i < 10; i ++)
 		{
 		u = cnt/10;
 		x = cnt % 10;
-		
+		_putchar(44);
+		_putchar(32);	
 		_putchar(u + '0');
 		_putchar(x + '0');
 
