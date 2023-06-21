@@ -7,17 +7,17 @@ void times_table(void)
 {
 int i, j, cnt, u, x;
 
-for (i = 0; i < 10; i ++)
+for (i = 0; i < 10; i++)
 {
-	for (j = 0; j < 10; j ++)
+	for (j = 0; j < 10; j++)
 	{
 		cnt = i * j;
 		if (cnt > 9)
 		{
-		u = cnt/10;
+		u = cnt / 10;
 		x = cnt % 10;
 		_putchar(44);
-		_putchar(32);	
+		_putchar(32);
 		_putchar(u + '0');
 		_putchar(x + '0');
 
