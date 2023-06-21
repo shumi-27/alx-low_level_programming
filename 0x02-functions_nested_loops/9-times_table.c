@@ -29,8 +29,8 @@ for (i = 0; i < 10; i ++)
 		_putchar(44);
 		_putchar(32);
 		_putchar(32);
-		_putchar(cnt + '0');
 		}
+		_putchar(cnt + '0');
 		}
 
 	}
