@@ -7,7 +7,6 @@
 int print_last_digit(int retval)
 {
 	retval = retval % 10;
-	
 	if (retval < 0)
 	{
 		retval = retval * -1;
