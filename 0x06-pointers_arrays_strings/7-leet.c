@@ -7,28 +7,18 @@
 char *leet(char *str)
 {
 	char *str2 = str;
+	char Lt[] = {'a', '4', 'e', '3', 'o', '0', 't', '7', 'l', '1'};
+	int i;
 
 	while (*str2 != '\0')
 	{
-		if (*str2 == 'a' || *str2 == 'A')
+		for (i = 0; i < 10; i += 2)
 		{
-			*str2 = '4';
-		}
-		else if (*str2 == 'e' || *str2 == 'E')
-		{
-			*str2 = '3';
-		}
-		else if (*str2 == 'o' || *str2 == 'O')
-		{
-			*str2 = '0';
-		}
-		else if (*str2 == 't' || *str2 == 'T')
-		{
-			*str2 = '7';
-		}
-		else if (*str2 == 'l' || *str2 == 'L')
-		{
-			*str2 = '1';
+			if (*str2 == Lt[i] || *str2 == (Lt[i] - 32))
+			{
+				*str2 = Lt[i + 1];
+				break;
+			}
 		}
 		str2++;
 	}
