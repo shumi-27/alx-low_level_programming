@@ -24,6 +24,10 @@ char *_strchr(char *s, char c)
 	{
 		str = '\0';
 	}
+	else 
+	{
+		str--;
+	}
 
 return (str);
 }
