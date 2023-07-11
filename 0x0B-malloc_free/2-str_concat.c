@@ -9,16 +9,16 @@
 char *str_concat(char *s1, char *s2)
 {
 	int n = 0;
-	char *strc, *strc2, *ss1 = s1, *ss2 = s2;
+	char *strc, *strc2, *ss1, *ss2;
 
 	if (s1 == 0)
-	{
 		s1 = "";
-	}
+
 	if (s2 == 0)
-	{
 		s2 = "";
-	}
+
+	ss1 = s1;
+	ss2 = s2;
 	while (*ss1 != '\0')
 	{
 		ss1++;
@@ -31,9 +31,8 @@ char *str_concat(char *s1, char *s2)
 	}
 	strc = malloc(n + 1);
 	if (strc == 0)
-	{
 		return (0);
-	}
+
 	strc2 = strc;
 	while (*s1 != '\0')
 	{
