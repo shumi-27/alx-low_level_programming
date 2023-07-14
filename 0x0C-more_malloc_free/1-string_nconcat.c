@@ -52,11 +52,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		str++;
 		s2++;
 	}
-	if ((int) n >= lstr2)
-	{
-		goto end;
-	}
-	else
+	if ((int) n < lstr2 && (int) n != lstr2)
 	{
 		rev = lstr2 - n;
 		while (rev)
@@ -65,7 +61,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			rev--;
 		}
 	}
-end:
 	*str = '\0';
 	return (str_concat);
 }
