@@ -16,7 +16,6 @@ int _strlen(char *str)
 		s++;
 		retval++;
 	}
-	
 	return (retval);
 }
 /**
@@ -29,7 +28,7 @@ int _strlen(char *str)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int lstr1, lstr2;
-	char *str, *str_concat;
+	char *str, *str_concat, *temp;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -39,8 +38,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	lstr2 = _strlen(s2);
 	str = malloc(lstr1 + lstr2 + 1);
 	if (str == NULL)
-		return(0);
+		return (0);
 	str_concat = str;
+	temp = str;
 	while (*s1 != '\0')
 	{
 		*str = *s1;
@@ -50,18 +50,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (*s2 != '\0')
 	{
 		*str = *s2;
-		*str++;
+		str++;
 		s2++;
 	}
-	if(n < lstr2 && n != lstr2)
+	if ((int) n < lstr2 && (int) n != lstr2)
 	{
-		*str = '\0';
+		str = realloc(temp, lstr1 + n + 1);
+		str[(lstr1 + n + 1) - 1] = '\0';
 	}
 	else
 	{
-		str = realloc(str, lstr1 + n + 1);
-		str[(lstr1 + n + 1) - 1] = '\0';
+		*str = '\0';
 	}
-
 	return (str_concat);
 }
