@@ -27,8 +27,8 @@ int _strlen(char *str)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int lstr1, lstr2;
-	char *str, *str_concat, *temp;
+	int lstr1, lstr2, rev;
+	char *str, *str_concat;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -40,7 +40,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (str == NULL)
 		return (0);
 	str_concat = str;
-	temp = str;
 	while (*s1 != '\0')
 	{
 		*str = *s1;
@@ -55,12 +54,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if ((int) n < lstr2 && (int) n != lstr2)
 	{
-		str = realloc(temp, lstr1 + n);
-		str[lstr1 + n] = '\0';
+		rev = lstr2 - n;
+		while (rev)
+		{
+			str--;
+			rev--;
+		}
 	}
-	else
-	{
-		*str = '\0';
-	}
+	*str = '\0';
 	return (str_concat);
 }
