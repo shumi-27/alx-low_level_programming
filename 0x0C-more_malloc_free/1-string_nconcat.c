@@ -56,7 +56,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if ((int) n < lstr2 && (int) n != lstr2)
 	{
 		str = realloc(temp, lstr1 + n + 1);
-		str[(lstr1 + n + 1) - 1] = '\0';
+		str[lstr1 + n + 1] = '\0';
 	}
 	else
 	{
