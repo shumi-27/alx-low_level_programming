@@ -17,17 +17,17 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	calc = get_op_func(argv[2]);
-	if (calc == NULL)
+	if (calc == NULL || argv[2][1] != '\0')
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(99);
 	}
 	if ((calc == op_div || calc == op_mod) && atoi(argv[3]) == 0)
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(100);
 	}
 	res = calc(atoi(argv[1]), atoi(argv[3]));
-	printf("%d", res);
+	printf("%d\n", res);
 	return (0);
 }
