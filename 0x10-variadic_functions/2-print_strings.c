@@ -13,6 +13,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *str;
 
+	if (n == 0)
+		return;
 	va_start(strings, n);
 	if (separator == NULL)
 		separator = "";
